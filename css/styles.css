@@ -126,7 +126,7 @@ img {
     margin-right: 50px;
 }
 
-.link-contacts {
+.link-hedcontacts {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,12 +143,12 @@ img {
     letter-spacing: 0.02em;
 }
 
-.link-contacts:hover,
-.link-contacts:focus {
+.link-hedcontacts:hover,
+.link-hedcontacts:focus {
     color: var(--accent-color);
 }
 
-.link-contacts>.contacts-icon {
+.link-hedcontacts>.contacts-icon {
     margin-right: 10px;
     fill: currentColor;
 }
@@ -420,10 +420,16 @@ img {
 
 /* Футер */
 .ftr-page {
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-color: #2F303A;
+}
+
+.ftr-page>.container {
+    width: 261px;
+    margin: 0;
 }
 
 .ftr-logo {
@@ -442,13 +448,15 @@ img {
     text-align: left;
     letter-spacing: var(--let-spc);
 }
+
 .footer-address > .link-contacts {
+    display: block;
     width: 231px;
     padding: 0;
     margin-bottom: 9px;
-    margin-right: auto;
 
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -460,7 +468,40 @@ img {
     margin-bottom: 0;
 }
 
+.ftr-social-links {
+    margin-left: 70px;
+}
+
+.ftr-title {
+    margin-bottom: 20px;
+    width: 145px;
+    color: var(--bcg-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--let-spc);
+}
+
+.ftr-social-links>.social-icon {
+    padding: 0;
+}
+
+.ftr-social-links .link-icon {
+    color: var(--bcg-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ftr-social-links .link-icon:hover,
+.ftr-social-links .link-icon:focus {
+    color: var(--bcg-color);
+    background-color: var(--accent-color);
+}
+
+.soc-icon {
+    fill: currentColor;
+}
+
 /* СТОРІНКА ПОРТФОЛІО 
+
 Фільтр Галереї - кнопки*/
 
 .gallery {
