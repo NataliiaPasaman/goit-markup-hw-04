@@ -127,7 +127,10 @@ img {
 }
 
 .link-contacts {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -143,6 +146,11 @@ img {
 .link-contacts:hover,
 .link-contacts:focus {
     color: var(--accent-color);
+}
+
+.link-contacts>.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /*Секція Герой*/
@@ -224,9 +232,6 @@ img {
     background-color: #F5F4FA;
     border-radius: 4px;
 }
-/* .benefits-icon {
-    fill: var(--title-color);
-/* } */ 
 
 .title-benefits {
     margin-bottom: 10px;
