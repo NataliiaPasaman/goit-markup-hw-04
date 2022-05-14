@@ -3,6 +3,7 @@
 --accent-color: #2196F3;
 --title-color: #212121;
 --bcg-color: #FFFFFF;
+--fon-color-header: #C4C4C4;
 --let-spc: 0.03em;
 }
 
@@ -144,12 +145,20 @@ img {
 }
 
 /*Секція Герой*/
+
 .hero {
     text-align: center;
     padding: 200px 0;
 
-    background-color: #2F303A;
+    background-color: var(--fon-color-header);
     color: var(--bcg-color);
+
+    background-image: url("../images/bc-hero.jpg");
+    /* background-image: linear-gradient(rgba(47, 48, 58, 0.4)); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px;
+    height: 600px;
 }
 
 .title-hero {
@@ -182,6 +191,7 @@ img {
 }
 
 /* Секція Переваги */
+
 .benefits {
     padding: 94px 0;
 }
@@ -200,6 +210,21 @@ img {
 .item-benefits:last-child {
     margin-right: 0;
 }
+
+.benefits-icon {
+    margin-bottom: 30px;
+    fill: currentColor;
+    width: 270px;
+    height: 120px;
+    background-position: center;
+
+    fill: var(--title-color);
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+/* .benefits-icon {
+    fill: var(--title-color);
+/* } */ 
 
 .title-benefits {
     margin-bottom: 10px;
@@ -287,6 +312,9 @@ img {
     border-bottom-left-radius: 4px;
 
     background-color: var(--bcg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .photo-team {
@@ -306,11 +334,47 @@ img {
 }
 
 .position {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: var(--let-spc);
 }
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: #AFB1B8;
+    background-color: var(--bcg-color);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+    color: var(--bcg-color);
+    background-color: var(--accent-color);
+}
+
+.soc-icon {
+    fill: currentColor
+} 
 
 /* Футер */
 .ftr-page {
