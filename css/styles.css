@@ -3,7 +3,8 @@
 --accent-color: #2196F3;
 --title-color: #212121;
 --bcg-color: #FFFFFF;
---fon-color-header: #C4C4C4;
+--fon-color-hero: #C4C4C4;
+--icon-color: #AFB1B8;
 --let-spc: 0.03em;
 }
 
@@ -269,7 +270,8 @@ img {
 }
 
 .title-work,
-.title-our-team {
+.title-our-team,
+.title-clients {
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -362,7 +364,7 @@ img {
     height: 44px;
     border-radius: 50%;
 
-    color: #AFB1B8;
+    color: var(--icon-color);
     background-color: var(--bcg-color);
 }
 
@@ -375,6 +377,41 @@ img {
 .soc-icon {
     fill: currentColor
 } 
+
+/* Секція Клієнти */
+.clients {
+    padding: 94px 0;
+}
+
+.title-clients {
+    min-width: 390px;
+}
+
+.list-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-clients:not(:last-child) {
+    margin-right: 30px;
+}
+
+.item-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.item-clients>.clients-icon {
+    fill: var(--icon-color);
+}
 
 /* Футер */
 .ftr-page {
