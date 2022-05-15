@@ -79,11 +79,6 @@ img {
     color: var(--bcg-color);
 }
 
-.logo:hover, 
-.logo:focus {
-    text-decoration: underline;
-}
-
 .menu-nav{
     display: flex;
     align-items: center;
@@ -220,14 +215,14 @@ img {
     margin-right: 0;
 }
 
+.box-bnicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.benefits-icon {
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    
     width: 270px;
     height: 120px;
-    background-position: center;
+    margin-bottom: 30px;
 
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -403,14 +398,13 @@ img {
     margin-right: 30px;
 }
 
-.item-clients {
-    width: 170px;
-    height: 92px;
-}
-
 .link-clients {
     display: flex;
-    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+   
     
     color: var(--icon-color);
     border: 1px solid var(--icon-color);
